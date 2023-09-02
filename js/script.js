@@ -25,7 +25,6 @@ document.querySelector(".form").addEventListener("submit", function(link){
 
         document.querySelector(".modal-data").classList.remove("modal__hidden")
     }catch(err) {
-        console.log(err)
         document.querySelector(".modal-error__type").innerText = err;
         document.querySelector(".modal-error").classList.remove("modal__hidden")
     }
