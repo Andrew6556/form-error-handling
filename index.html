@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/сss/style.css">
+    <title>try-catch-safe. часть 1</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form" action="#">
+            <h3 class="form__title">Оставьте заявку</h3>
+            <div class="form__inner">
+                <input class="form__input" id="form__forName"    type="text"   placeholder="Ваше имя">
+                <input class="form__input" id="form__forSurname" type="text"   placeholder="Ваша фамилия">
+                <input class="form__input" id="form__forAge"     type="number" placeholder="Ваш возраст">
+                <input class="form__input" id="form__forPoint"   type="number" placeholder="Ваш cредний балл">
+            </div>
+            <button class="form__btn btn" type="submit">Оставить заявку</button>
+        </form>
+    </div>
+    <div class="modal modal-error modal__hidden">
+        <div class="modal__body">
+            <div class="modal__content">
+                <div class="modal-error__img">
+                    <img class="modal__img-item" src="/img/close.png" alt="close">
+                </div>
+                <div class="modal-error__inner">
+                    <div class="modal-error__title title">
+                        Oh await
+                    </div>
+                    <div class="modal-error__text">
+                        Attention error! <br>
+                        <div class="modal-error__wrap">
+                            Error type: <span class="modal-error__type"></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal__btn modal-error__btn">Back</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-data modal__hidden">
+        <div class="modal__body">
+            <div class="modal__content modal-data__content">
+                <div class="modal-data__title title">Ваши данные</div>
+                <div class="modal-data__inner">
+                    <div class="modal-data__item">
+                        Ваше имя: <span class="modal-data__name modal-data__text"></span>
+                    </div>
+                    <div class="modal-data__item">
+                        Ваша фамилия: <span class="modal-data__username modal-data__text">sss</span>
+                    </div>
+                    <div class="modal-data__item">
+                        Ваш возраст: <span class="modal-data__age modal-data__tex"></span>
+                    </div>
+                    <div class="modal-data__item">
+                        Ваш средник балл: <span class="modal-data__point modal-data__text"></span>
+                    </div>
+                </div>
+                <button class="modal__btn modal-data__btn">Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

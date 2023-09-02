@@ -1,0 +1,229 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+:focus, :active {
+    outline: none;
+}
+a:focus, a:active {
+    outline: none;
+}
+nav, footer, header, aside {
+    display: block;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button,a {
+    cursor: pointer;
+    background: none;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+}
+/* reset Settings */
+
+
+.modal__hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+/*block */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 97%;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 232px;
+    padding: 21px 0;
+    font-weight: 500px;
+    font-size: 18px;
+    background: #83C2FF;
+    box-shadow: 0px 9px 53px rgba(87, 173, 255, 0.5);
+    border-radius: 80px;
+}
+.title{
+    font-size: 40px;
+    text-align: center;
+}
+/* form */
+.form{
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 9px 53px rgba(87, 173, 255, 0.5);
+    padding: 30px;
+}
+.form__inner{
+    margin-bottom: 30px;
+}
+.form__title{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 29px;
+}
+.form__input{
+    font-size: 18px;
+    color:black;
+    padding: 22px 15px;
+    width: 100%;
+    background: transparent;
+    border-bottom: 2px solid #DDDDDD;
+}
+.form__input:not(:last-child){
+    margin-bottom: 14px;
+}
+.form__btn{
+    padding: 15px 0;
+    margin: 0 auto;
+}
+/* modal */
+.modal{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    top:0;
+    left: 0;
+    transition: all 2.5s ease;
+}
+.modal__body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100%;
+}
+.modal__content{
+    background: white;
+    width: 565px;
+    height: 500px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+    box-shadow: -2px 43px 122px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+.modal__close{
+    cursor: pointer;
+    font-size: 25px;
+    display: block;
+    position: absolute; 
+    top: 18px;
+    right: 30px;
+}
+.modal__btn{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight:500;
+}
+/* settings modal */
+.modal-error__img{
+    height: 50%;
+    background: red;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+.modal-error__title{
+    margin-bottom: 20px;
+}
+.modal-error__text{
+    font-size: 25px;
+    color: grey;
+    line-height: 30px;
+}
+.modal-error__type{
+    color: black;
+    text-decoration: underline;
+}
+.modal-error__inner{
+    text-align: center;
+    padding: 20px;
+}
+.modal-error__btn{
+    background: red;
+}
+
+.modal-data__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 55px;
+}
+/* modal-error */
+
+.modal-data__btn{
+    width: 70%;
+    border: 1px solid gray;
+    transition: all 500ms ease;
+}
+.modal-data__btn:hover{
+    color: white;
+    background: gray;
+}
+.modal-data__item{
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+.modal-data__text{
+    font-size: 28px;
+    color: gray;
+}
